@@ -1,0 +1,74 @@
+.TH "HSH" 1 "20 November 2019" "1.0" "Simple Shell man page"
+
+.SH NAME
+hsh - command interpreter Simple Shell.
+
+.SH SYNOPSIS
+hsh (does not support arguments)
+
+.SH DESCRIPTION
+Simple shell (hsh) is a command-line interpreter that executes commands read from the standard input or from a file.
+
+.SH OVERVIEW
+The simple shell (hsh)  is a command that reads lines from either a file or the terminal, interprets them, and generally executes other	commands.
+
+.SH RETURN VALUE
+The shell returns the error code given by the last completed command followed by either ctrl-d or exit with no status code.
+
+.SH SYNTAX
+(hsh)$ <command> <options> <arg 1> <arg 2> ...
+.SH NON-INTERACTIVE MODE:
+$ <command> | ./hsh
+.SS
+Interactive mode:
+
+.SS
+EXAMPLE:
+(hsh)$ /bin/ls
+.SS
+EXAMPLE:
+(hsh)$ ls -l
+.SS
+EXAMPLE:
+(hsh)$ cat filename
+.SS
+Non-interactive mode:
+
+.SS
+EXAMPLE:
+$ echo "ls -l" | ./hsh
+
+.SH BUILTIN COMMANDS
+.SS alias
+- create or list an alias
+
+.SS cd
+- change directory
+
+.SS env
+- list the current environment variables
+
+.SS exit
+- exit the shell
+
+.SS help
+- display help for a builtin command
+
+.SS history
+- display the command history for the current shell session
+
+.SS setenv
+- sets and environment variable
+
+.SS unsetenv
+- unsets an environment variable
+
+.SH BUGS
+No known bugs
+
+.SH AUTHORS
+.B Elnur Sultanov
+
+elnur.sultanov@holbertonschool.com
+
+https://github.com/esultanov
