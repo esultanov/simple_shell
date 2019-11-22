@@ -1,5 +1,7 @@
 # C - Simple Shell
 
+### **Write a simple UNIX command interpreter.**
+
 ## Learning Objectives
 
 - Who designed and implemented the original Unix operating system
@@ -15,13 +17,13 @@
 - How does the shell use the PATH to find the programs
 - How to execute another program with the execve system call
 - How to suspend the execution of a process until one of its children terminates
-- What is EOF / “end-of-file”?
+- What is `EOF` / “end-of-file”?
 
 ## Tasks
 
 Write a UNIX command line interpreter.
 
-Usage: simple_shell
+Usage: `simple_shell`
 
 Your Shell should:
 
@@ -31,9 +33,9 @@ Your Shell should:
 - The command lines are made only of one word. No arguments will be passed to programs.
 - If an executable cannot be found, print an error message and display the prompt again.
 - Handle errors.
-- You have to handle the “end of file” condition (Ctrl+D)
+- You have to handle the “end of file” condition (`Ctrl+D`)
 - Handle command lines with arguments
-- Handle the PATH
+- Handle the `PATH`
 - Implement the exit built-in, that exits the shell
 - Usage: exit
 - Handle arguments for the built-in exit
